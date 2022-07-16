@@ -1,8 +1,7 @@
 .link {
   text-decoration: none;
   color: inherit;
-  // transition: color var(--transition-var);
-  @include transition-main (color);
+  @include transition-main();
 
   &:hover,
   &:focus {

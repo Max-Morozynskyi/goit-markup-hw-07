@@ -1,7 +1,7 @@
 @mixin transition-main($property: color) {
-  $main-duration: 2500ms;
+  $main-duration: 250ms;
   $main-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   transition-property: $property;
   transition-duration: $main-duration;
   transition-timing-function: $main-cubic-bezier;

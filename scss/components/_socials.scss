@@ -16,11 +16,11 @@
     align-items: center;
     width: 44px;
     height: 44px;
-  
+    
     border-radius: 50%;
-    @include transition-main();
+
     @include transition-main(background-color);
-  
+    
     fill: currentColor;
   }
 }
