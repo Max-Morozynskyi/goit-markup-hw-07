@@ -36,12 +36,12 @@
   margin: -1px;
 }
 
-.portfolio, .customers, .workers, .photos, .qualities {
+.portfolio, .customers, .workers, .our-job, .qualities {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.customers__title, .workers__title, .photos__title {
+.customers__title, .workers__title, .our-job__title {
   margin-bottom: 50px;
   font-weight: none;
   font-size: 36px;
@@ -50,7 +50,8 @@
   text-align: center;
 }
 
-.join__title, .our-job__title, .qualities__title {
+.join__title,
+.subscribe__title, .photo__title, .qualities__title {
   margin-bottom: 10px;
   font-weight: none;
   font-size: 14px;
@@ -148,6 +149,14 @@ body.no-scroll {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
+.button--active {
+  color: var(--white-clr);
+  background-color: var(--main-clr);
+}
+.button--passive {
+  color: var(--title-color);
+  background-color: var(--bg-clr-secondary);
+}
 .button:hover, .button:focus {
   color: var(--white-clr);
   background-color: var(--hover-btn);
@@ -155,18 +164,8 @@ body.no-scroll {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.btn--active {
-  color: var(--white-clr);
-  background-color: var(--main-clr);
-}
-
-.btn--passive {
-  color: var(--title-color);
-  background-color: var(--bg-clr-secondary);
-}
-
 .hero__btn,
-.form__btn,
+.modal__btn,
 .subscribe__btn {
   min-width: 200px;
   padding: 10px 32px;
@@ -277,6 +276,11 @@ body.no-scroll {
 .social-list__item .social-list__link:focus {
   background-color: var(--main-clr);
   color: var(--white-clr);
+}
+
+.photo-thumb {
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -413,12 +417,7 @@ body.no-scroll {
 }
 
 /* our job section */
-.photo__thumb {
-  position: relative;
-  overflow: hidden;
-}
-
-.our-job__title {
+.photo__title {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -438,7 +437,7 @@ body.no-scroll {
   color: #ffffff;
 }
 
-.photos .card-set {
+.our-job .card-set {
   --items: 3;
 }
 
@@ -546,12 +545,10 @@ body.no-scroll {
 .contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.contact__address {
+.contacts__address {
   color: var(--white-clr);
 }
-
-.contact__link {
+.contacts__link {
   color: var(--foot-adress);
 }
 
@@ -559,8 +556,8 @@ body.no-scroll {
 .subscribe {
   margin-top: 12px;
 }
-
-.join__title {
+.join__title,
+.subscribe__title {
   color: var(--white-clr);
 }
 
@@ -671,7 +668,7 @@ body.no-scroll {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon__send {
+.icon-send {
   margin-left: 10px;
   vertical-align: middle;
 }

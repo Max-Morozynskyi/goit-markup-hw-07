@@ -13,6 +13,16 @@
     
   cursor: pointer;
 
+  &--active {
+    color: var(--white-clr);
+    background-color: var(--main-clr);
+  }
+  
+  &--passive {
+    color: var(--title-color);
+    background-color: var(--bg-clr-secondary);
+  }
+
   &:hover,
   &:focus {
     color: var(--white-clr);
@@ -21,18 +31,8 @@
   }
 }
 
-.btn--active {
-  color: var(--white-clr);
-  background-color: var(--main-clr);
-}
-
-.btn--passive {
-  color: var(--title-color);
-  background-color: var(--bg-clr-secondary);
-}
-
 .hero__btn,
-.form__btn,
+.modal__btn,
 .subscribe__btn {
   min-width: 200px;
   padding: 10px 32px;

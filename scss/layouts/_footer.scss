@@ -29,25 +29,25 @@
   &__item:not(:last-child) {
     margin-bottom: 9px;
   }
-}
-
-.contact__address {
-  color: var(--white-clr);
-}
-
-.contact__link {
-  color: var(--foot-adress);
+  
+  &__address {
+    color: var(--white-clr);
+  }
+  
+  &__link {
+    color: var(--foot-adress);
+  }
 }
 
 .join,
 .subscribe {
   margin-top: 12px;
-}
-
-.join__title {
-  @extend %title-small;
   
-  color: var(--white-clr);
+  &__title {
+    @extend %title-small;
+    
+    color: var(--white-clr);
+  }
 }
 
 .join .social-list {
@@ -119,7 +119,7 @@
   @include transition-main(transform);
 }
 
-.icon__send {
+.icon-send {
   margin-left: 10px;
   vertical-align: middle;
 }
